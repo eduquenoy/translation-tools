@@ -1,0 +1,12 @@
+{
+    "LOCALES" : [
+            "fr",
+            "es",
+            "it"
+            ],
+    "COMMENT_PATTERN" : "//==============================================",
+    "EXT_IN" : ".xml",
+    "EXT_OUT" : ".js",
+    "LOCALE_PREFIX" : "locale_",
+    "PATH" : "/path/to/your/file/to/transform"
+}

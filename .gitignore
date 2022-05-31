@@ -1,0 +1,8 @@
+
+.DS_Store
+karuta2xml/data/config.json
+karuta2xml/locale_fr.xml
+xml2karuta/data/config.json
+xml2karuta/locale_es.js
+xml2karuta/locale_fr.js
+xml2karuta/locale_it.js
