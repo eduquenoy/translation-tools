@@ -4,7 +4,8 @@ _Translation tools for Karuta_
 ## ![](https://icons.iconarchive.com/icons/custom-icon-design/flat-europe-flag/48/France-icon.png)Outils pour la transformation de fichiers compatibles avec Crowdin
 ### Présentation
 Il s'agit d'outils permettant de transformer des fichiers de langues de l'application [Karuta](https://github.com/karutaproject) vers un format reconnu par la plate-forme d'aide à la traduction [Crowdin](https://crowdin.com/project/karuta-eporfolio).
-- l'util de développement utilisé est [Processing](https://processing.org/)
+- l'environement de développement utilisé est [Processing](https://processing.org/)
+- pour utiliser un outil, il faut au préalable installer la version de [Processing](https://processing.org/) correspondant à votre machine puis télécharger le contenu du dépôt Github. Initialisez ensuite le fichier `config.json` de chaque outil puis ouvrez le fichier `.pde` pour lancer un outil.
 - liste des outils :
   - `karuta2xml` : pour la transformation d'un fichier de langue javascript vers un fichier au format XML compatible avec Crowdin
   - `xml2karuta` : pour la transformation d'un ou pluseurs fichiers de langue XML, issus de la plate-forme Crowdin, vers les fichiers javascript au format de Karuta
