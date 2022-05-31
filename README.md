@@ -1,5 +1,5 @@
 # translation-tools
-_Translation tools for Crowdin_
+_Translation tools for Karuta_
 
 ## ![](https://icons.iconarchive.com/icons/custom-icon-design/flat-europe-flag/48/France-icon.png)Outils pour la transformation de fichiers compatibles avec Crowdin
 ### Présentation
