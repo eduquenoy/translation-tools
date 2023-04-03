@@ -3,6 +3,8 @@ Transformation des fichiers .xml contenant les traductions vers fichier .js au f
 */
 //CONSTANTES
 String PATH; 
+String TRANSLATED_XML;
+String TRANSLATED_JS;
 String LOCALE_PREFIX ;
 String EXT_IN;
 String EXT_OUT; 
@@ -40,6 +42,9 @@ void setup(){
      localList[i] = LOCALES.getString(i);
    }
    PATH = config.getString("PATH");
+   TRANSLATED_XML = config.getString("TRANSLATED_XML");
+   TRANSLATED_JS = config.getString("TRANSLATED_JS");
+
    COMMENT_PATTERN = config.getString("COMMENT_PATTERN");
    EXT_IN = config.getString("EXT_IN");
    EXT_OUT = config.getString("EXT_OUT");
@@ -55,7 +60,7 @@ void draw(){
     for(int i=0;i<localList.length;i++){
       
       //Construction du nom de fichier complet
-      fileName = PATH + LOCALE_PREFIX + localList[i] + EXT_IN ;
+      fileName = PATH + TRANSLATED_XML + LOCALE_PREFIX + localList[i] + EXT_IN ;
              //Chargement du fichier .xml
       fileXML = loadXML(fileName);
       
@@ -95,7 +100,7 @@ void draw(){
           }
       }
       //Création du fichier .js
-      localFileName = LOCALE_PREFIX + localList[i] + EXT_OUT;
+      localFileName = PATH + TRANSLATED_JS + LOCALE_PREFIX + localList[i] + EXT_OUT;
       saveStrings(localFileName,lines.array());
     }
     

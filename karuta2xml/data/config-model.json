@@ -4,5 +4,7 @@
     "XML_MODEL" : "FormatAndroid.xml", 
     "DEFAULT_COMMENT" : "General", 
     "REGEXPR" : "[a-zA-Z\\s]+", 
+    "SOURCE_JS" : "js_sources/",
+	"SOURCE_XML" : "xml_sources/",
     "PATH" : "/path/to/your/file/to/transform"
 }

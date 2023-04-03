@@ -8,5 +8,7 @@
     "EXT_IN" : ".xml",
     "EXT_OUT" : ".js",
     "LOCALE_PREFIX" : "locale_",
+	"TRANSLATED_XML": "xml_translated/",
+	"TRANSLATED_JS": "js_translated/",
     "PATH" : "/path/to/your/file/to/transform"
 }

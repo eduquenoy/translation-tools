@@ -10,6 +10,8 @@ String XML_MODEL; //XML model file
 String DEFAULT_COMMENT; //Default comment
 String REGEXPR; //To extract comments from comment lines
 String PATH;//Path to locale source file
+String SOURCE_JS; //Path to locale js source file
+String SOURCE_XML;//Path to locale xml source file
 
 //Variables
 String localeName;
@@ -40,13 +42,15 @@ void setup(){
    DEFAULT_COMMENT = config.getString("DEFAULT_COMMENT");
    REGEXPR = config.getString("REGEXPR");
    PATH = config.getString("PATH");
+   SOURCE_JS = config.getString("SOURCE_JS");
+   SOURCE_XML = config.getString("SOURCE_XML");
    
    //Set variables
    localeName=LOCALE_PREFIX+LOCALE;
    lineHead="karutaStr['"+LOCALE+"']['";
-   localeSourceFileName=localeName+".js";
-   localeResultFileName=localeName+".xml";
-   localeSource = PATH+localeSourceFileName;
+   localeSourceFileName=localeName+".js";//Chemin vers le fichier source js à transformer
+   localeResultFileName=PATH+SOURCE_XML+localeName+".xml";//Chemin vers le fichier source XML à enregistrer
+   localeSource = PATH+SOURCE_JS+localeSourceFileName;
    
   
    source = loadStrings(localeSource);//Loading the translation file from Karuta
