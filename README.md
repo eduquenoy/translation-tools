@@ -15,7 +15,7 @@ Il s'agit d'outils permettant de transformer des fichiers de langues de l'applic
 ### Outil `karuta2xml`
 - commencez par dupliquer le fichier `config-model.json` en `config.json`
 - ajustez éventuellement les noms de dossiers contenant le fichier source `.js`et le fichier source `.xml` (généré par `karuta2xml`) : lignes `SOURCE_JS` et `SOURCE_XML`
-- modifiez la ligne  `"PATH" : "/path/to/your/file/to/transform"` avec le chemin vers le fichier `.js` initial (n'indiquez pas le nom du fichier ni le dossier contenant le fichier .js ou le fichier .xml). Par exemple : `/users/duke/myproject/locales/`
+- modifiez la ligne  `"PATH" : "/path/to/your/file/to/transform"` avec le chemin vers le dossier principal qui contiendra les 4 dossiers fichier `.js` initial (n'indiquez pas le nom du fichier ni le dossier contenant le fichier .js ou le fichier .xml). Par exemple : `/users/duke/myproject/locales/`
 - vérifiez que les autres lignes du fichier `config.json` vous conviennent
 - __IMPORTANT__ : le chemin indiqué par `PATH` sera synchronisé sur Github et configuré dans Crowdin comme source (branche _main_) et destination (branche _i10n_main_) des traductions
 
